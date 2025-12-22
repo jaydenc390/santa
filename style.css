@@ -41,7 +41,7 @@ button {}
 .grid {
     display: grid;
     /* GRID */
-
+    color: black;
 }
 
 .card {}
@@ -55,4 +55,8 @@ footer {
     bottom: 0;
     width: 100%;
     justify-content: center;
+}
+
+.hero-text {
+    color: black;
 }
