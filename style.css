@@ -7,41 +7,86 @@ body {
 
 /* Navigation - FLEXBOX */
 .nav {
-    background-color: #f53528;
+    background-color: #de2a1e;
     color: white;
     display: flex;
     /* FLEXBOX */
     padding-left: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 30px;
     justify-content: space-between;
 }
 
 .nav-links {
     display: flex;
+    width: 400px;
     /* FLEXBOX */
+    align-items: center;
 }
 
-.nav-links a {}
+.nav-links a {
+    display: flex;
+    width: 100px;
+}
 
 /* Hero Section - FLEXBOX */
 .hero {
     display: flex;
     /* FLEXBOX */
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 25px;
 }
 
-.hero img {}
+.hero img {
+    height: 125px;
+    width: 250px;
+}
 
-button {}
+button {
+    padding: 10px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
 
 /* Workshop Section - GRID */
-.workshop {}
+.workshop {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 51px;
+    width: 100%;
+    padding-top: 50px;
+    display: grid;
+    background-color: rgb(228, 225, 225);
+}
 
 .grid {
     display: grid;
     /* GRID */
     color: black;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+.border {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: white;
+    border-radius: 6px;
+    justify-content: center;
 }
 
 .card {}
@@ -54,7 +99,10 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .hero-text {
